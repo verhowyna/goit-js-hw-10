@@ -1,0 +1,44 @@
+.breed-select {
+  margin-top: 50px;
+  margin-left: 20px;
+  min-width: 100px;
+  border: solid #413f3f;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.loader {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.error {
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cat-info {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.js-cat-img {
+  margin-top: auto;
+  height: 300px;
+}
+
+.js-cat-description {
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.cat-card {
+  display: none;
+}

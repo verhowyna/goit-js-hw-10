@@ -13,7 +13,7 @@ select.hidden = true;
 
 function createMarkup(arr) {
     return arr.map(({ name, id }) => {
-        return `<option class ="js-select" value="${id}">${name}</option>`
+        return `<option value="${id}">${name}</option>`
     }).join("");
 }
 
@@ -47,16 +47,16 @@ function onSelect() {
             catInfo.classList.remove("cat-card");
         })
         .catch(err => {
-            console.log(`Oops! Something went wrong! Try reloading the page!`)
-
-            loader.hidden = true;
+            console.log(`Oops! Something went wrong! Try reloading the page!`);
+           
+           loader.hidden = true;
             select.hidden = false;
             catInfo.classList.add("cat-card");
         })
 }
 
 function createCard(img, name, descr, temperament) {
-    return `<img class="js-cat-img" src="${img}" alt="${name}" width="300">
+    return `<img class="js-cat-img" src="${img}" alt="${name}">
     <div class="js-cat-description">
       <h2>${name}</h2>
       <p>${descr}</p>
