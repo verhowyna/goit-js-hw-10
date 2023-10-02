@@ -1,3 +1,5 @@
+import { Report } from 'notiflix/build/notiflix-report-aio';
+
 import { fetchBreeds, fetchCatByBreed } from "./cat-api";
 
 const placeholder = `<option class="js-select js-placeholder" value="choose">Select the cat</option>`;
@@ -47,8 +49,7 @@ function onSelect() {
             catInfo.classList.remove("cat-card");
         })
         .catch(err => {
-            console.log(`Oops! Something went wrong! Try reloading the page!`);
-           
+            Report.failure('Oops! Something went wrong! Try reloading the page!');
            loader.hidden = true;
             select.hidden = false;
             catInfo.classList.add("cat-card");
